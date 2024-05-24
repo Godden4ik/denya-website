@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Экотес Украина | Ecotes - надёжность во всём</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="." rel="icon">
+    <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" rel="stylesheet">
+    <style>
+        .carousel-item {
+            height: 500px;
+            width: 100%;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 50%;
+            background-color: rgba(0, 0, 0, 0.52);
+            overflow: hidden;
+            transition: height 0.3s ease;
+            backdrop-filter: blur(1px);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .carousel-overlay {
+            background-color: rgba(0, 0, 0, 0.25);
+            overflow: hidden;
+            transition: height 0.3s ease;
+            backdrop-filter: blur(1px);
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+            align-items: start;
+            padding: 50px;
+            font-size: 42px;
+            font-weight: bold;
+        }
+
+        .overlay-content {
+            color: white;
+            text-align: center;
+            padding: 20px;
+            transition: opacity 0.3s ease;
+        }
+
+        li:hover .overlay {
+            height: 100%;
+        }
+
+        li:hover .overlay-content {
+            opacity: 1;
+        }
+
+
+    </style>
+</head>
+<body>
+<header class="w-full h-[80px] shadow-xl">
+    <div class="container px-[25px] mx-auto h-full">
+        <nav class="h-full w-full flex justify-between items-center">
+            <ul class="flex gap-[25px] text-sm items-center justify-between">
+                <li class="h-[50px] w-auto">
+                    <a class="" href="." id="logo">
+                        <img alt="Ecotes" class="h-full w-auto object-contain"
+                             src="https://ecotes.com.ua/images/logo.png">
+                    </a></li>
+                <li class="active:text-[#0db746] hover:text-[#2e72bd] transition duration-150"><a href=".">Продукція</a>
+                </li>
+                <li class="active:text-[#0db746] hover:text-[#2e72bd] transition duration-150"><a href=".">Контакти</a>
+                </li>
+                <li class="active:text-[#0db746] hover:text-[#2e72bd] transition duration-150"><a
+                        href=".">Застосування</a></li>
+                <li class="active:text-[#0db746] hover:text-[#2e72bd] transition duration-150"><a href=".">Про
+                    компанію</a></li>
+            </ul>
+            <ul class="flex gap-[25px] items-center">
+                <li>
+                    <button><img alt="" class="h-[24px]" src="./src/svg/search.svg"></button>
+                </li>
+                <li>
+                    <button><img alt="" class="h-[24px]" src="./src/svg/account.svg"></button>
+                </li>
+                <li>
+                    <button><img alt="" class="h-[24px]" src="./src/svg/cart.svg"></button>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<main class="flex flex-col gap-[50px] py-[50px]">
+    <section id="main-banner">
+        <div class="container px-[25px]">
+            <div class="carousel slide" data-bs-ride="carousel" id="carouselExampleIndicators">
+                <div class="carousel-inner rounded-2">
+                    <a class="carousel-item active" href="."
+                       style="background-image: url('./src/img/carousel-first.jpg');">
+                        <div class="w-full h-full text-white carousel-overlay">
+                            <div>
+                                <p>ПЕНА</p>
+                                <p>ДЕЗИНФЕКЦИЯ</p>
+
+                            </div>
+                        </div>
+                    </a>
+                    <a class="carousel-item" href="."
+                       style="background-image: url('./src/img/carousel-second.jpg');">
+                        <div class="w-full h-full text-white carousel-overlay">
+                            <div>
+                                <p>ВЫСОКОЕ</p>
+                                <p>ДАВЛЕНИЕ</p>
+                            </div>
+
+                        </div>
+                    </a>
+                    <a class="carousel-item" href="."
+                       style="background-image: url('./src/img/carousel-third.jpg');">
+                        <div class="w-full h-full text-white carousel-overlay">
+                            <div>
+                                <p>АКСЕССУАРЫ</p>
+
+                            </div>
+                        </div>
+                    </a>
+                    <a class="carousel-item" href="."
+                       style="background-image: url('./src/img/carousel-fourth.jpg');">
+                        <div class="w-full h-full text-white carousel-overlay">
+                            <div>
+                                <p>РАЗРАБОТКА</p>
+                                <p>ИНДИВИДУАЛЬНЫХ</p>
+                                <p>РЕШЕНИЙ</p>
+
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#carouselExampleIndicators"
+                        type="button">
+                    <span aria-hidden="true" class="carousel-control-prev-icon"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#carouselExampleIndicators"
+                        type="button">
+                    <span aria-hidden="true" class="carousel-control-next-icon"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+    <section id="production-banner">
+        <div class="container px-[25px] flex flex-col gap-[25px]">
+            <h2 class="text-3xl text-gray-600">Продукція</h2>
+            <ul class="h-[250px] flex gap-[50px] items-center justify-between text-[22px]">
+                <li class="h-full flex-grow w-full relative "><a href="">
+                    <div class="overlay rounded-2">
+                        <div class="overlay-content">Аппараты высокого давления</div>
+                    </div>
+                    <img alt="" class="w-full h-full object-cover rounded-2" src="./src/img/carousel-first.jpg">
+                </a>
+                </li>
+                <li class="h-full flex-grow w-full relative">
+                    <a href="">
+                        <div class="overlay rounded-2">
+                            <div class="overlay-content">Пена/Дезинфекция</div>
+                        </div>
+                        <img alt="" class="w-full h-full object-cover rounded-2" src="./src/img/carousel-second.jpg">
+                    </a>
+                </li>
+                <li class="h-full flex-grow w-full relative">
+                    <a href="">
+                        <div class="overlay rounded-2">
+                            <div class="overlay-content">Аксессуары</div>
+                        </div>
+                        <img alt="" class="w-full h-full object-cover rounded-2" src="./src/img/carousel-third.jpg">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section id="usage-banner">
+        <div class="container px-[25px] flex flex-col gap-[25px]">
+            <h2 class="text-3xl text-gray-600">Області застосування</h2>
+            <ul class="h-[150px] flex gap-[12px] items-center justify-between text-xs">
+                <li class="h-full flex-grow w-full relative "><a href="">
+                    <div class="overlay rounded-2">
+                        <div class="overlay-content">Аппараты высокого давления</div>
+                    </div>
+                    <img alt="" class="w-full h-full object-cover rounded-2" src="./src/img/carousel-first.jpg">
+                </a>
+                </li>
+                <li class="h-full flex-grow w-full relative">
+                    <a href="">
+                        <div class="overlay rounded-2">
+                            <div class="overlay-content">Пена/Дезинфекция</div>
+                        </div>
+                        <img alt="" class="w-full h-full object-cover rounded-2" src="./src/img/carousel-second.jpg">
+                    </a>
+                </li>
+                <li class="h-full flex-grow w-full relative">
+                    <a href="">
+                        <div class="overlay rounded-2">
+                            <div class="overlay-content">Аксессуары</div>
+                        </div>
+                        <img alt="" class="w-full h-full object-cover rounded-2" src="./src/img/carousel-third.jpg">
+                    </a>
+                </li>
+                <li class="h-full flex-grow w-full relative">
+                    <a href="">
+                        <div class="overlay rounded-2">
+                            <div class="overlay-content">Аксессуары</div>
+                        </div>
+                        <img alt="" class="w-full h-full object-cover rounded-2" src="./src/img/carousel-third.jpg">
+                    </a>
+                </li>
+                <li class="h-full flex-grow w-full relative">
+                    <a href="">
+                        <div class="overlay rounded-2">
+                            <div class="overlay-content">Аксессуары</div>
+                        </div>
+                        <img alt="" class="w-full h-full object-cover rounded-2" src="./src/img/carousel-third.jpg">
+                    </a>
+                </li>
+                <li class="h-full flex-grow w-full relative">
+                    <a href="">
+                        <div class="overlay rounded-2">
+                            <div class="overlay-content">Аксессуары</div>
+                        </div>
+                        <img alt="" class="w-full h-full object-cover rounded-2" src="./src/img/carousel-third.jpg">
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+    </section>
+    <section id="about-us-banner">
+        <div class="container px-[25px] flex flex-col gap-[25px]">
+            <h2 class="text-3xl text-gray-600">Про компанію</h2>
+            <p class="p-[25px] border-y-2 border-[#2e72bd]">Екотес - обладнання для миття та дезінфекції в промисловості
+
+                Компанія «Екотес» займається виробництвом професійного обладнання для миття у промисловій сфері, це
+                обладнання високого тиску, а також системи піноутворення та дезінфекції.
+
+                Наша команда реалізує нестандартні проекти щодо встановлення індивідуальних мийних систем та здійснює
+                кваліфіковане гарантійне та післягарантійне обслуговування нашого обладнання..
+
+                Концепція нашої роботи заснована на тісній взаємодії із замовником, індивідуальному підході, а також
+                високоякісному обслуговуванні та супроводі замовлення. Цілі та завдання компанії - це виробництво
+                високотехнологічного якісного обладнання із застосуванням європейських розробок та проектів у сфері
+                виробництва апаратів високого тиску, систем піноутворення та дезінфекції. Виготовлення обладнання на
+                нашому виробництві дозволяє надати клієнту найкращу пропозицію у співвідношенні високу якість -
+                ціна.</p>
+        </div>
+    </section>
+</main>
+<footer class="w-full h-[300px] shadow-xl bg-gray-300">
+    <div class="container mx-auto h-full flex justify-start items-start gap-[50px] px-[25px] py-[50px]">
+        <div class="flex flex-col gap-[12px]">
+            <h3 class="text-lg text-gray-600">ТОВ "ЕКОТЕС"</h3>
+            <ul class="text-sm flex flex-col gap-[4px]">
+                <li class="active:text-[#0db746] hover:text-[#2e72bd] transition duration-150"><a href="">49055, м.
+                    Дніпро</a></li>
+                <li class="active:text-[#0db746] hover:text-[#2e72bd] transition duration-150">
+                    <a href="">вул. Шина 2</a>
+                </li>
+                <li class="active:text-[#0db746] hover:text-[#2e72bd] transition duration-150"><a href="">+380 (56)
+                    736-04-88</a></li>
+                <li class="active:text-[#0db746] hover:text-[#2e72bd] transition duration-150"><a href="">+380 (50)
+                    560-02-20</a></li>
+                <li class="active:text-[#0db746] hover:text-[#2e72bd] transition duration-150"><a href="">+380 (67)
+                    431-63-01</a></li>
+                <li class="active:text-[#0db746] hover:text-[#2e72bd] transition duration-150"><a href="">info@ecotes.com.ua</a>
+                </li>
+
+            </ul>
+        </div>
+        <div class="flex flex-col gap-[12px]">
+            <h3 class="text-lg text-gray-600">Навігація</h3>
+            <ul class="text-sm flex flex-col gap-[4px]">
+                <li class="active:text-[#0db746] hover:text-[#2e72bd] transition duration-150"><a href="">Продукція</a>
+                </li>
+                <li class="active:text-[#0db746] hover:text-[#2e72bd] transition duration-150"><a href="">Контакти</a>
+                </li>
+                <li class="active:text-[#0db746] hover:text-[#2e72bd] transition duration-150"><a
+                        href="">Застосування</a></li>
+                <li class="active:text-[#0db746] hover:text-[#2e72bd] transition duration-150"><a href="">Про
+                    компанію</a></li>
+
+            </ul>
+        </div>
+        <div class="flex flex-col gap-[12px]">
+            <h3 class="text-lg text-gray-600">Наші соц. мережі</h3>
+            <ul class="flex gap-[12px]">
+                <li><a href=""><img alt="" class="h-[24px]" src="./src/svg/instagram.svg"></a></li>
+                <li><a href=""><img alt="" class="h-[24px]" src="./src/svg/youtube.svg"></a></li>
+                <li><a href=""><img alt="" class="h-[24px]" src="./src/svg/tiktok.svg"></a></li>
+                <li><a href=""><img alt="" class="h-[24px]" src="./src/svg/x.svg"></a></li>
+                <li><a href=""><img alt="" class="h-[24px]" src="./src/svg/facebook.svg"></a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</footer>
+
+<script crossorigin="anonymous"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
